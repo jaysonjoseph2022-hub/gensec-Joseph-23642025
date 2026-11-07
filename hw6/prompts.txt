@@ -81,3 +81,55 @@ Do not claim that the application is secure without explaining what was checked.
 Do not add unnecessary dependencies.
 
 At the end, provide a summary of the changes and exact instructions for running the application.
+
+Prompt 3
+I want you to redesign the graphical user interface of my existing Image Steganography application to make it look like a professional cybersecurity desktop application.
+The current encoding and decoding functionality works correctly, and all 13 automated tests pass.
+IMPORTANT: Focus primarily on the visual design and user experience. Do not break or remove existing functionality.
+DESIGN REQUIREMENTS:
+1.	THEME
+•	Create a modern dark cybersecurity theme.
+•	Use a dark navy or charcoal background.
+•	Use blue and cyan accent colors.
+•	Use consistent fonts, spacing, padding, and alignment.
+•	Make the interface look polished and professional.
+2.	NAVIGATION
+•	Add a sidebar or clear navigation area.
+•	Include Encode, Decode, and About sections.
+•	Clearly indicate which section is currently selected.
+3.	ENCODE INTERFACE
+•	Add a prominent image selection area.
+•	Display a preview of the selected image.
+•	Include a clearly labeled message entry area.
+•	Display available image capacity.
+•	Style the Encode and Save buttons professionally.
+4.	DECODE INTERFACE
+•	Add an image selection area with image preview.
+•	Include a prominent Decode button.
+•	Display recovered messages in a readable, read-only text area.
+•	Add a Copy Message button.
+5.	USER FEEDBACK
+•	Add attractive success and error notifications.
+•	Display clear status information.
+•	Provide helpful instructions when no image has been selected.
+6.	ABOUT SECTION
+•	Explain what image steganography is.
+•	Briefly explain the LSB technique.
+•	Explain the difference between steganography and encryption.
+7.	USABILITY
+•	Make the window resize gracefully.
+•	Ensure text and buttons remain readable.
+•	Prevent controls from becoming overcrowded.
+•	Keep the interface beginner-friendly.
+TECHNICAL REQUIREMENTS:
+•	Continue using Python and Tkinter.
+•	Pillow should remain the image-processing library.
+•	Do not introduce unnecessary dependencies.
+•	Keep all project files inside hw6.
+•	Preserve the existing steganography.py implementation unless changes are absolutely necessary.
+•	Preserve file overwrite protection and image validation.
+•	Do not modify the existing encoding format.
+•	Keep all 13 existing tests passing.
+•	Add tests if any underlying functionality changes.
+Before making changes, inspect the existing application. Explain your proposed UI changes, then implement them.
+Finally, run the complete automated test suite and summarize the changes.
