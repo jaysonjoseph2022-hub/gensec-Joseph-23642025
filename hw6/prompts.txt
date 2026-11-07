@@ -1,0 +1,83 @@
+Prompt 1.
+I am completing a cybersecurity homework assignment. Act as a senior Python developer and build a professional Image Steganography Desktop Application.
+
+PROJECT REQUIREMENTS:
+
+Create a Python desktop application that demonstrates educational image steganography by hiding and retrieving short text messages inside PNG images.
+
+TECHNOLOGY:
+
+Python
+Tkinter for the graphical user interface
+Pillow (PIL) for image processing
+
+FEATURES:
+
+Encode Message:
+Allow users to browse and select a PNG image.
+Provide a text box for entering a message.
+Embed the message into the image using a basic least significant bit (LSB) technique.
+Check that the image has sufficient capacity.
+Save the resulting image as a new PNG without overwriting the original.
+Decode Message:
+Allow users to select a previously encoded PNG image.
+Extract the embedded text message.
+Display the recovered message in the application.
+User Interface:
+Create a clean, professional desktop interface.
+Include separate Encode and Decode sections.
+Add buttons for selecting images, encoding, decoding, and saving.
+Display helpful success and error messages.
+SECURITY AND RELIABILITY:
+Validate image file types and dimensions.
+Handle corrupted or invalid images gracefully.
+Never execute extracted content.
+Process files locally without network communication.
+Do not overwrite original images.
+Do not include functionality for concealing executable files or transmitting hidden data.
+CODE QUALITY:
+Use clear, organized Python functions.
+Include comments explaining the encoding and decoding process.
+Handle exceptions appropriately.
+Make the application easy for a beginner to understand.
+TESTING:
+Create automated tests for encoding and decoding.
+Test empty messages, invalid images, and insufficient image capacity.
+Verify that an encoded message can be successfully recovered.
+
+PROJECT STRUCTURE:
+
+Keep all project files inside the existing hw6 directory. Do not modify files outside this directory.
+
+Before implementing, inspect the existing project files and explain your implementation plan. Then generate the application, dependencies file, and tests.
+
+Finally, provide exact instructions for installing dependencies and launching the application on Kali Linux.
+
+Prompt 2.
+Review the Image Steganography application you created in the hw6 directory.
+
+I have successfully tested the Encode and Decode functionality, and all six existing automated tests pass.
+
+Now perform a thorough security and code-quality review.
+
+Please:
+
+Review app.py and steganography.py for potential security vulnerabilities.
+Verify that image uploads and file handling are properly validated.
+Ensure the application never overwrites original image files.
+Check that malformed or corrupted PNG files are handled safely.
+Check that message size and image capacity limits are enforced.
+Verify that extracted messages are displayed only as text and never executed.
+Improve error handling and user feedback where necessary.
+Improve the Tkinter interface to look professional and user-friendly.
+Add or update automated tests for any security improvements.
+Run the complete test suite and report the results.
+
+Important:
+
+Keep all changes inside the hw6 directory.
+Do not remove existing functionality.
+Do not claim that the application is secure without explaining what was checked.
+Do not add unnecessary dependencies.
+
+At the end, provide a summary of the changes and exact instructions for running the application.
